@@ -1,0 +1,157 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --cor-primaria: #40A2D8;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #F0EDCF;
+    --cor-hover: #0B60B0;
+
+    --fonte-primaria: "Montserrat", sans-serif;
+    --fonte-secundaria: "Krona One", sans-serif;
+}
+
+body{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+}
+
+header{
+    padding-top: 5vh;
+    padding-left: 15vw;
+}
+
+.menuNavegacao{
+    display: flex;
+    gap: 3.6vw;
+}
+
+.menuNavegacao a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main{
+    padding: 10vh 14.5vw;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 84px;
+}
+
+.descricaoGeral{
+    color: var(--cor-terciaria);
+
+    width: 30vw;
+
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.descricaoGeral h1{
+    font-family: var(--fonte-secundaria);
+    font-size: 2.25rem;
+    line-height: 56px; /* 155.556% */
+}
+
+.descricaoGeral h1 strong{
+    color: var(--cor-primaria);
+}
+
+.descricaoGeral p{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    line-height: 36px;
+    margin-top: 40px;
+}
+
+.descricaoGeral__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.descricaoGeral__links h2{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.descricaoGeral__links a{
+    width: 378px;
+
+    border-radius: 8px;
+    display: inline-block;
+
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    line-height: 36px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+    font-weight: 600;
+    border: 2px solid var(--cor-primaria);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.descricaoGeral__links a:hover{
+    background-color: #272727;
+}
+
+#fotoPessoal{
+    width: 33vw;
+}
+
+footer{
+    padding: 15px;
+    margin-top: 60px;
+    background-color: var(--cor-primaria);
+    
+    
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1050px){
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .menuNavegacao{
+        justify-content: center;
+    }
+
+    .descricaoGeral{
+        width: 85vw;
+    }
+
+    #fotoPessoal{
+        width: 66vw;
+    }
+}
